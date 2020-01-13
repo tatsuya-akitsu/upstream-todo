@@ -18,6 +18,7 @@ const mapStateToProps = (appState: AppState) => {
   return {
     email: '',
     password: '',
+    isLoggedIn: false,
   };
 };
 

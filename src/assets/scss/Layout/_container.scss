@@ -36,3 +36,23 @@
   max-width: 320px;
   z-index: 2;
 }
+
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $base-background;
+  z-index: 1000;
+}
+
+.l-header_inner {
+  padding: 6px 0;
+  @include inner();
+
+  &.--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

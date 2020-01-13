@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { SigninHandler } from '../../containers/signin/index';
+import AppGlobalHeader from '../../parts/molecules/AppGlobalHeader';
 import AppCheckbox from '../../parts/molecules/AppCheckbox';
 import labels from '../../assets/doc/signup';
 import logo from '../../assets/images/icon_service_logo.svg';
@@ -12,6 +13,7 @@ const classNames = ClassList(styles);
 interface OwnProps {
   email: string;
   password: string;
+  isLoggedIn: boolean;
 }
 
 type State = {
@@ -105,6 +107,7 @@ class SignupComponent extends React.Component<Props, State> {
     const { name, email, password } = this.state;
     return (
       <div className={classNames.lAccount} ref={this.refContainer}>
+        <AppGlobalHeader isLoggedIn={this.props.isLoggedIn} />
         <div className={classNames.lWrapper} ref={this.refWrapper}>
           <div className={classNames.lGlobalInner}>
             <img className={classNames.pGlobalLogo} src={logo} alt="" />
