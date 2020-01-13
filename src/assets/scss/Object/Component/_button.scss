@@ -1,0 +1,62 @@
+.m-app_btn {
+  display: block;
+  padding: 0 14px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.002px;
+  line-height: 48px;
+  text-align: center;
+  border-radius: 3px;
+  transition: $easeInOutQuart;
+
+  &:hover {
+    transition: $easeInOutQuart;
+    opacity: 0.3;
+  }
+
+  &.--primary {
+    color: $base-white-color;
+    background: $brand-color;
+  }
+
+  &.--secondary {
+    color: $brand-color;
+    border: 1px solid $brand-color;
+    background: $base-white-color;
+  }
+
+  &.--inclusion {
+    font-size: 0;
+    line-height: 0;
+  }
+
+  img, span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  img { width: 20px; }
+  span {
+    padding-left: 12px;
+    font-size: 14px;
+    line-height: 48px;
+  }
+
+  &.--google {
+    background: $label-color;
+
+    span { color: $base-text-color; }
+  }
+  &.--facebook {
+    background: $base-white-color;
+    border: 1px solid #1877f2;
+
+    span { color: #1877f2; }
+  }
+  &.--yahoo {
+    background: $base-white-color;
+    border: 1px solid #6a0094;
+
+    span { color: #6a0094; }
+  }
+}

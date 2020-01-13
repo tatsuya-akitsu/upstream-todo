@@ -1,0 +1,49 @@
+.p-global_logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  width: 44%;
+}
+
+.p-global_label {
+  font-size: 12px;
+  letter-spacing: 0.002px;
+  text-align: center;
+}
+
+.p-global_thumbnail {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 640px;
+  z-index: 1;
+}
+
+.p-account_form {
+  .m-form_control:not(:nth-of-type(1)) { margin-top: 16px; }
+
+  .m-app_btn { width: 100%; }
+
+  .m-app_checkbox {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .m-app_checkbox + span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.002px;
+  }
+}
+
+.p-account_check { margin: 20px 0 32px; }
+
+.p-social_btn_area {
+  .m-app_btn {
+    width: 100%;
+
+    &:not(:nth-of-type(1)) { margin-top: 16px; }
+  }
+}
+

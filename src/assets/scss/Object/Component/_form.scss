@@ -1,0 +1,69 @@
+.m-form_control {
+  position: relative;
+
+  label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translate(0, -50%);
+    font-size: 14px;
+    color: $subtext-color;
+    line-height: 1;
+    letter-spacing: 0.002px;
+    transition: $easeInOutQuart;
+  }
+
+  input:focus ~ label, input:valid ~ label {
+    top: 5px;
+    transform: none;
+    font-size: 10px;
+    color: $brand-color;
+    transition: $easeInOutQuart;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  position: relative;
+  padding: 1.25rem 1.3rem;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  box-shadow: none;
+  background: $base-white-color;
+  border: 1px solid $border-color;
+  border-radius: .2rem;
+  width: 100%;
+
+  &::-webkit-input-placeholder {
+    color: $label-color;
+    font-size: 1.1rem;
+    font-weight: normal;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.04);
+  }
+
+  &:-moz-placeholder {
+    color: $label-color;
+    font-size: 1.1rem;
+    font-weight: normal;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.04);
+  }
+
+  &::-moz-placeholder {
+    color: $label-color;
+    font-size: 1.1rem;
+    font-weight: normal;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.04);
+  }
+
+  &:-ms-input-placeholder {
+    color: $label-color;
+    font-size: 1.1rem;
+    font-weight: normal;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.04);
+  }
+
+  &:focus {
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.04);
+  }
+}
